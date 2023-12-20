@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8270db5f6a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body onload="transition()">
+    <header id="head">
+      <nav>
+        <a href="#head" class="up"><i class="fa-solid fa-angles-up"></i></a>
+        <a href="img/CV.pdf" download="CV" class="cv"
+          ><i class="fa-solid fa-cloud-arrow-down"></i
+        ></a>
+        <a href="https://github.com/YvanWzl01/Yvan-Wetzel-Portfolio" class="git"
+          ><i class="fa-brands fa-square-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/yvan-wetzel-14b9761ba/"
+          class="lkdn"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="tel:0789438175" class="tel"
+          ><i class="fa-solid fa-phone"></i
+        ></a>
+        <!-- mailto: = open mail -->
+        <!-- ?to = mail du destinataire -->
+        <a href="mailto:?to=yvanwetzel1@gmail.com" class="mail"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+      </nav>
+      <div class="container">
+        <div class="horizontalBar"></div>
+        <div class="verticalBar"></div>
+      </div>
+      <div class="txt">
+        <h1 class="bienvenue" id="bienvenue">Bienvenue.</h1>
+
+        <h3 id="principal_title">
+          Je suis Yvan Wetzel, développeur web en recherche d'alternance. <br />
+          Bien que je sois nouveau dans ce domaine, je m'engage à 100% pour
+          acquérir des connaissances approfondies et enrichir mon expérience.
+          <br />
+          Mon parcours est marqué par une passion pour la création d'expériences
+          en ligne. <br />
+          Je vous invite donc à explorer mon Portfolio pour découvrir mes
+          projets et mes compétences. <br />
+          N'hésitez pas à me contacter pour discuter ou partager.
+        </h3>
+      </div>
+      <div class="info">
+        <div>
+          <div class="horizontalBar2"></div>
+          <div class="verticalBar2"></div>
+          <div class="details">
+            <ul>
+              <a href="#competences"
+                ><li class="li_header">Mes compétences</li></a
+              >
+              <br />
+              <a href="#projets"><li class="li_header">Mes projets</li></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="containerFooter">
+        <div class="horizontalBarFooter"></div>
+        <div class="verticalBarFooter"></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="competence">
+        <div class="divTitleCompetence">
+          <h1 class="title_competence" id="competences">Mes compétences</h1>
+        </div>
+        <div class="container_ul">
+          <div class="div_ul_competence">
+            <ul>
+              <a href="#competences"
+                ><li class="li_competence html" onmouseover="afficherHtml()">
+                  <p>HTML</p>
+                </li></a
+              >
+              <a href="#competences"
+                ><li class="li_competence css" onmouseover="afficherCss()">
+                  <p>CSS</p>
+                </li></a
+              >
+              <a href="#competences"
+                ><li class="li_competence js" onmouseover="afficherJs()">
+                  <p>Javascript / Typescript</p>
+                </li></a
+              >
+            </ul>
+          </div>
+          <div class="div_ul_competence2">
+            <ul>
+              <a href="#competences"
+                ><li class="li_competence node" onmouseover="afficherNode()">
+                  <p>Node.Js</p>
+                </li></a
+              >
+              <a href="#competences"
+                ><li class="li_competence mysql" onmouseover="afficherSql()">
+                  <p>MySQL</p>
+                </li></a
+              >
+              <a href="#competences"
+                ><li class="li_competence php" onmouseover="afficherPhp()">
+                  <p>PHP</p>
+                </li></a
+              >
+            </ul>
+          </div>
+        </div>
+        <div class="container_hidden">
+          <div class="content-hidden_text">
+            <p id="afficherHtml" class="hidden_text">
+              En m'intéréssant au développement web j'ai commencé par le HTML,
+              j'ai donc dès le début d'année 2023 commencé à apprendre les bases
+              de ce langage. Cela me permet aujourd'hui d'avoir de solides bases
+              et de connaître les fondamentaux demandés en entreprise.
+            </p>
+            <p id="afficherCss" class="hidden_text">
+              J'ai en parallèle de l'apprentissage du HTML appris le CSS, j'ai
+              donc également de solides bases qui me permettent de styliser et
+              mettre en forme mes pages web de manière esthétique et responsive.
+            </p>
+            <p id="afficherJs" class="hidden_text">
+              Pendant ma piscine au sein de l'ETNA, j'ai réalisé plusieurs
+              projets et exercices en TypeScript et JavaScript. Cela m'a permis
+              d'acquérir les bases en termes d'algorithmie et de mise en place
+              dans le développement web.
+            </p>
+            <p id="afficherNode" class="hidden_text">
+              J'ai créé une API avec Node.js, ce qui m'a permis de comprendre le
+              fonctionnement du back-end et sa relation avec les bases de
+              données.
+            </p>
+            <p id="afficherSql" class="hidden_text">
+              J'ai effectué plusieurs projets en MySQL, ce qui m'a permis de
+              connaître les bases, allant de la création d'une base de données
+              aux commandes élémentaires telles que le CRUD, par exemple.
+            </p>
+            <p id="afficherPhp" class="hidden_text">
+              J'ai également travaillé sur le back-end avec PHP, avec en
+              complément Laravel. C'est un langage que je maîtrise moins bien,
+              seulement ses bases.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projets">
+        <div class="projets_content_h1">
+          <h1 class="projets_h1" id="projets">Mes projets</h1>
+        </div>
+        <div class="slider_content">
+          <div class="slider">
+            <img
+              src="img/bubble.jpeg"
+              alt="1"
+              class="images"
+              background="red"
+              id="imgBubble"
+            />
+            <img src="img/zelda.png" alt="2" class="images" id="imgZelda" />
+            <img
+              src="img/formulaire.jpeg"
+              alt="3"
+              class="images"
+              id="imgForm"
+            />
+            <img src="img/chat.png" alt="4" class="images" id="imgIrc" />
+          </div>
+          <div>
+            <img src="img/précédent.png" class="bouton d" id="boutonD" />
+            <img src="img/précédent.png" class="bouton g" id="boutonG" />
+          </div>
+        </div>
+        <div id="container-txt-projet">
+          <p id="txt-bubble" class="masquer">
+            J'ai créé un site de Bubble Tea, incluant le front-end, le back-end
+            et les bases de données. <br />
+            Technologies utilisées : HTML, CSS, JAVASCRIPT, PHP, LARAVEL <br />
+            <br />
+            <a
+              href="https://github.com/YvanWzl01/Yvan-Wetzel_Portfolio/tree/main/projets/projet-BubbleTea"
+              class="github"
+              target="_blank"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+          </p>
+          <p id="txt-zelda" class="masquer">
+            Création d'un jeu en ligne de commande avec de l'algorithmie. <br />
+            Technologie utilisée : TYPESCRIPT <br />
+            <br />
+            <a
+              href="https://github.com/YvanWzl01/Yvan-Wetzel_Portfolio/tree/main/projets/projet-Zelda"
+              class="github"
+              target="_blank"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+          </p>
+          <p id="txt-form" class="masquer">
+            Exercice de mise en forme d'un formulaire en suivant des consignes
+            strictes. <br />
+            Technologies utilisées : HTML, CSS <br />
+            <br />
+            <a
+              href="https://github.com/YvanWzl01/Yvan-Wetzel_Portfolio/tree/main/projets/projet-Formulaire"
+              class="github"
+              target="_blank"
+              ><i class="fa-brands fa-square-github" class="github"></i
+            ></a>
+          </p>
+          <p id="txt-irc" class="masquer">
+            Création d'un IRC, mise en place du front-end, du back-end et des
+            bases de données ainsi que de l'authentification. <br />
+            Technologies utilisées : HTML, CSS, PHP <br />
+            <br />
+            <a
+              href="https://github.com/YvanWzl01/Yvan-Wetzel_Portfolio/tree/main/projets/projet-IRC"
+              class="github"
+              target="_blank"
+              ><i class="fa-brands fa-square-github"></i
+            ></a>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
